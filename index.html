@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#46583d">
+  <title>Muhammed Hisham & Aneena Jubin | Wedding</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<!-- LUXURY DOUBLE-DOOR OPENING -->
+<section id="opening" class="opening">
+  <div class="door left-door">
+    <span class="door-decoration">❦</span>
+  </div>
+
+  <div class="door right-door">
+    <span class="door-decoration">❦</span>
+  </div>
+
+  <div class="door-seam"></div>
+
+  <button id="openButton" class="cover-seal">
+    <span class="seal-ornament">❦</span>
+    <strong>H & A</strong>
+    <small>TAP TO OPEN</small>
+    <span class="seal-ornament">✧</span>
+  </button>
+
+  <p class="cover-caption">THE WEDDING INVITATION</p>
+</section>
+
+<main id="website" hidden>
+
+  <!-- PAGE 1: FORMAL INVITATION -->
+  <section class="page invitation-page floral-page">
+    <div class="page-border"></div>
+    <span class="corner-flower flower-tl">❦</span>
+    <span class="corner-flower flower-br">❦</span>
+
+    <div class="page-content reveal">
+      <p class="arabic" lang="ar" dir="rtl">
+        بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+      </p>
+
+      <div class="ornament">✦ ❦ ✦</div>
+
+      <p class="eyebrow">
+        TOGETHER WITH OUR FAMILIES
+      </p>
+
+      <p class="invitation-text">
+        With the blessings of Allah,<br>
+        we cordially request the honour<br>
+        of your presence at the wedding of
+      </p>
+
+      <h1 class="couple-names">
+        <span>MUHAMMED HISHAM</span>
+        <em>&</em>
+        <span>ANEENA JUBIN</span>
+      </h1>
+
+      <div class="ornament">❦</div>
+
+      <p class="invitation-text">
+        As we begin this beautiful journey together,<br>
+        your presence and prayers will make<br>
+        our celebration truly memorable.
+      </p>
+
+      <p class="scroll-prompt">SCROLL TO REVEAL ↓</p>
+    </div>
+  </section>
+
+  <!-- PAGE 2: SCRATCH WEDDING DETAILS -->
+  <section class="page scratch-page" id="scratchSection">
+    <div class="page-content reveal">
+
+      <p class="eyebrow">A SPECIAL ANNOUNCEMENT</p>
+      <h2>Our Wedding Day</h2>
+      <div class="ornament">✦ ❦ ✦</div>
+
+      <p class="section-description">
+        Scratch the card to reveal<br>
+        the details of our special day.
+      </p>
+
+      <div class="scratch-card">
+        <div class="scratch-result">
+          <p class="scratch-label">THE WEDDING OF</p>
+          <p class="scratch-couple">
+            HISHAM & ANEENA
+          </p>
+
+          <strong class="scratch-date">27</strong>
+          <p class="scratch-month">DECEMBER 2026</p>
+          <p class="scratch-day">SUNDAY</p>
+
+          <div class="scratch-divider"></div>
+
+          <p class="scratch-time">4:00 PM – 8:00 PM</p>
+          <p class="scratch-venue">BUM HALL</p>
+          <p class="scratch-place">POOKKOTTUR, MALAPPURAM</p>
+        </div>
+
+        <canvas id="scratchCanvas"
+                aria-label="Scratch to reveal the wedding details">
+        </canvas>
+      </div>
+
+      <button id="revealButton" class="text-button">
+        Reveal without scratching
+      </button>
+
+      <p class="scratch-footnote">
+        A BEAUTIFUL BEGINNING AWAITS
+      </p>
+    </div>
+  </section>
+
+  <!-- PAGE 3: COUNTDOWN -->
+  <section class="page countdown-page">
+    <div class="page-content reveal">
+
+      <p class="eyebrow">THE CELEBRATION BEGINS IN</p>
+      <h2>Counting Down to Forever</h2>
+      <div class="ornament">❦</div>
+
+      <div class="countdown-grid">
+        <div class="time-box">
+          <strong id="days">00</strong>
+          <span>DAYS</span>
+        </div>
+        <div class="time-box">
+          <strong id="hours">00</strong>
+          <span>HOURS</span>
+        </div>
+        <div class="time-box">
+          <strong id="minutes">00</strong>
+          <span>MINUTES</span>
+        </div>
+        <div class="time-box">
+          <strong id="seconds">00</strong>
+          <span>SECONDS</span>
+        </div>
+      </div>
+
+      <p id="countdownText" class="section-description">
+        We look forward to celebrating with you.
+      </p>
+    </div>
+  </section>
+
+  <!-- PAGE 4: WEDDING LOCATION -->
+  <section class="page venue-page floral-page">
+    <div class="page-border"></div>
+
+    <div class="page-content reveal">
+      <p class="eyebrow">JOIN US FOR OUR CELEBRATION</p>
+      <h2>Wedding Venue</h2>
+      <div class="ornament">✦ ❦ ✦</div>
+
+      <div class="venue-card">
+        <p class="eyebrow">THE CELEBRATION</p>
+
+        <h3>BUM HALL</h3>
+
+        <p class="venue-address">
+          Pookkottur<br>
+          Malappuram, Kerala
+        </p>
+
+        <div class="venue-divider"></div>
+
+        <p class="venue-date">Sunday, 27 December 2026</p>
+        <p class="venue-time">4:00 PM – 8:00 PM</p>
+
+        <a class="primary-button"
+           href="https://maps.app.goo.gl/m6cZAimPiFoehZr89"
+           target="_blank"
+           rel="noopener noreferrer">
+          VIEW LOCATION ↗
+        </a>
+      </div>
+
+      <button id="calendarButton" class="outline-button">
+        ADD TO CALENDAR
+      </button>
+    </div>
+  </section>
+
+  <!-- FINAL PAGE -->
+  <section class="page closing-page">
+    <div class="page-content reveal">
+
+      <div class="ornament">✦ ❦ ✦</div>
+
+      <p class="eyebrow">WITH LOVE AND GRATITUDE</p>
+
+      <h2>Thank You</h2>
+
+      <p class="closing-message">
+        Your presence, blessings and prayers<br>
+        are the greatest gifts we could receive.
+      </p>
+
+      <h3 class="closing-names">
+        MUHAMMED HISHAM
+        <span>&</span>
+        ANEENA JUBIN
+      </h3>
+
+      <p class="closing-date">27 • 12 • 2026</p>
+
+      <button id="shareButton" class="light-button">
+        SHARE INVITATION
+      </button>
+    </div>
+  </section>
+
+  <footer>
+    MUHAMMED HISHAM & ANEENA JUBIN • 2026
+  </footer>
+</main>
+
+<audio id="music" src="music.mp3" loop preload="none"></audio>
+
+<button id="musicButton"
+        class="music-button"
+        aria-label="Toggle background music"
+        aria-pressed="false"
+        hidden>♪</button>
+
+</body>
+</html>
